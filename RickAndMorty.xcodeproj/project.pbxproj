@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		87461B9F2DA17C1900D3B8C8 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87461B9E2DA17C1900D3B8C8 /* CombineMoya */; };
+		87461BA12DA17C1900D3B8C8 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 87461BA02DA17C1900D3B8C8 /* Moya */; };
+		87461BA32DA17C1900D3B8C8 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87461BA22DA17C1900D3B8C8 /* ReactiveMoya */; };
+		87461BA52DA17C1900D3B8C8 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 87461BA42DA17C1900D3B8C8 /* RxMoya */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		87461B102DA1510700D3B8C8 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87461BA12DA17C1900D3B8C8 /* Moya in Frameworks */,
+				87461B9F2DA17C1900D3B8C8 /* CombineMoya in Frameworks */,
+				87461BA52DA17C1900D3B8C8 /* RxMoya in Frameworks */,
+				87461BA32DA17C1900D3B8C8 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,10 @@
 			);
 			name = RickAndMorty;
 			packageProductDependencies = (
+				87461B9E2DA17C1900D3B8C8 /* CombineMoya */,
+				87461BA02DA17C1900D3B8C8 /* Moya */,
+				87461BA22DA17C1900D3B8C8 /* ReactiveMoya */,
+				87461BA42DA17C1900D3B8C8 /* RxMoya */,
 			);
 			productName = RickAndMorty;
 			productReference = 87461B102DA1510700D3B8C8 /* RickAndMorty.app */;
@@ -149,11 +164,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QDLWJC333B;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RickAndMorty/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
@@ -178,11 +193,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QDLWJC333B;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RickAndMorty/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
@@ -351,6 +366,29 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		87461B9E2DA17C1900D3B8C8 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87461B2E2DA1523200D3B8C8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		87461BA02DA17C1900D3B8C8 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87461B2E2DA1523200D3B8C8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		87461BA22DA17C1900D3B8C8 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87461B2E2DA1523200D3B8C8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		87461BA42DA17C1900D3B8C8 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87461B2E2DA1523200D3B8C8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 87461B082DA1510700D3B8C8 /* Project object */;
 }

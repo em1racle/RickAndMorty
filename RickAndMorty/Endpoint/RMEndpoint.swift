@@ -9,8 +9,8 @@ import Moya
 import Foundation
 
 enum RMEndpoint {
-    case character
-    case episode
+    case characters
+    case episodes
 }
 
 extension RMEndpoint: TargetType {
@@ -20,8 +20,8 @@ extension RMEndpoint: TargetType {
     }
     var path: String {
         switch self {
-        case .character: return "/characters"
-        case .episode: return "/episode"
+        case .characters: return "/character"
+        case .episodes: return "/episode"
         }
     }
     var method: Moya.Method {
@@ -32,7 +32,7 @@ extension RMEndpoint: TargetType {
     }
     var task: Task {
         switch self {
-        case .character, .episode:
+        case .characters, .episodes:
             return .requestPlain
         }
     }

@@ -10,3 +10,8 @@ import Foundation
 enum API {
     static let baseUrl = "https://rickandmortyapi.com/api"
 }
+
+enum ImageName {
+    static let launchLoadingImage = "launchLoading"
+    static let launchTitleImage = "launchTitle"
+}
