@@ -7,10 +7,10 @@
 
 import Foundation
 
-protocol CharactersViewModelDelegate: AnyObject {
+protocol CharactersViewModelProtocol: AnyObject {
     
 }
 
-final class CharactersViewModel: CharactersViewModelDelegate {
+final class CharactersViewModel: CharactersViewModelProtocol {
     
 }

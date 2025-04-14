@@ -15,3 +15,8 @@ enum ImageName {
     static let launchLoadingImage = "launchLoading"
     static let launchTitleImage = "launchTitle"
 }
+
+enum CoreDataConstant {
+    static let characterContainerName = "CharacterContainer"
+    static let characterEntityName = "CharacterEntity"
+}

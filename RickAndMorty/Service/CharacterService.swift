@@ -14,11 +14,26 @@ protocol ICharacterService {
 
 struct CharacterService: ICharacterService {
     private let networkService: IHTTPClient
+    private let coreDataService: ICharacterCoreDataService
     init(_ dependencies: IDependencies) {
         networkService = dependencies.networkService
+        coreDataService = dependencies.characterCoreDataService
     }
     func getCharacter(completion: @escaping (CharacterResult) -> Void) {
-        <#code#>
+        coreDataService.fetch { result in
+            switch result {
+            case .success(let character):
+                if let character = character {
+                    OperationQueue.mainAsyncIfNeeded {
+                        completion(.success(character))
+                    }
+                } else {
+                    downloadCharacter(completion: completion)
+                }
+            case .failure:
+                fatalError()
+            }
+        }
     }
 }
 
